@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Choose Address View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChooseAddress" id="Y6W-OH-hqX" customClass="ChooseAddressViewController" customModule="Safari" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" مصر    " textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Rl-ow-8BZ">
+                                <rect key="frame" x="16" y="375" width="361" height="50"/>
+                                <color key="tintColor" red="0.019607843140000001" green="0.094117647060000004" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Av9-cn-FN2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTY-Cz-Hlo">
+                                <rect key="frame" x="20" y="763" width="353" height="35"/>
+                                <color key="backgroundColor" red="0.019607843137254902" green="0.094117647058823528" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="تابع">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Please Choose a country" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amS-9I-6aH">
+                                <rect key="frame" x="20" y="75" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="manAndMap" translatesAutoresizingMaskIntoConstraints="NO" id="eI1-es-6Nr">
+                                <rect key="frame" x="0.0" y="112" width="393" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="pya-CG-JQq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GTY-Cz-Hlo" secondAttribute="trailing" constant="20" id="2CT-cK-Udt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Rl-ow-8BZ" secondAttribute="trailing" constant="16" id="5Cx-oM-7n6"/>
+                            <constraint firstItem="eI1-es-6Nr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="N3f-jS-nGi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="amS-9I-6aH" secondAttribute="trailing" constant="20" id="X5f-Jc-kr0"/>
+                            <constraint firstItem="amS-9I-6aH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="dUS-Et-keD"/>
+                            <constraint firstItem="amS-9I-6aH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="16" id="e5S-UU-meH"/>
+                            <constraint firstItem="2Rl-ow-8BZ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="l4Y-UM-5Ak"/>
+                            <constraint firstItem="2Rl-ow-8BZ" firstAttribute="top" secondItem="eI1-es-6Nr" secondAttribute="bottom" constant="30" id="m1S-E6-krJ"/>
+                            <constraint firstItem="eI1-es-6Nr" firstAttribute="top" secondItem="amS-9I-6aH" secondAttribute="bottom" constant="16" id="nsh-4n-Wlb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eI1-es-6Nr" secondAttribute="trailing" id="rY0-0G-4KI"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="GTY-Cz-Hlo" secondAttribute="bottom" constant="20" id="wYG-zm-Wnl"/>
+                            <constraint firstItem="GTY-Cz-Hlo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="xCT-BC-W0A"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ChooseAddreesGif" destination="eI1-es-6Nr" id="56z-7G-9kx"/>
+                        <outlet property="addressTextField" destination="2Rl-ow-8BZ" id="Rzv-0K-xbc"/>
+                        <outlet property="followBtn" destination="GTY-Cz-Hlo" id="aIc-bf-cdj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-86.25954198473282" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="manAndMap" width="1080" height="704"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
